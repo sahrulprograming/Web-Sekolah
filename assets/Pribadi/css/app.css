@@ -1,0 +1,26 @@
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    background-color: #219ebc;
+    border-radius: 0 0 40px 40px;
+    position: fixed-top;
+}
+
+nav a img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5rem;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
