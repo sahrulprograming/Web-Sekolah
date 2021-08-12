@@ -8,7 +8,6 @@
     src: url(../font/SonsieOne/SonsieOne-Regular.ttf);
 }
 
-
 body {
     background-color: rgba(white, white, rgb(168, 168, 226), alpha);
 }
@@ -39,8 +38,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: SourceSerifPro;
 }
 
 .image img {
@@ -58,7 +57,7 @@ nav ul li a {
     background-size: cover;
     background-position: 0% 60%;
     border-radius: 0 0 40px 40px;
-    background-image: url("/assets/Pribadi/img/school.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/Pribadi/img/school.jpg");
 }
 
 .hero::before {
@@ -80,6 +79,7 @@ nav ul li a {
     font-family: SonsieOne;
     color: gold;
     font-size: 37px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .container {
@@ -103,10 +103,18 @@ nav ul li a {
     color: white;
 }
 
-.profil card {
+.profil .card {
     height: 2000px;
 }
 
+.card-profil {
+    color: white;
+    margin: 0.60rem;
+    padding: 5px;
+    text-align: center;
+    font-family: SourceSerifPro;
+    background-color: #219ebc;
+}
 
 
 /*
