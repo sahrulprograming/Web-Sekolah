@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets\Pribadi\icon\learning\png\050-campus.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/framework/bootstrap5/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/framework/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/framework/hovereffect/css/hover-min.css" media="all">
-    <link rel="stylesheet" href="assets/Pribadi/css/app.css">
+    <link rel="stylesheet" href="assets/Pribadi/css/dekstop-app.css">
+    <link rel="stylesheet" href="assets/Pribadi/css/tablet-app.css">
+    <link rel="stylesheet" href="assets/Pribadi/css/mobile-app.css">
     <title>Home Page</title>
 </head>
 
@@ -25,7 +28,8 @@
             <li>
                 <a class="hvr-pulse-grow btn text-white" href="#"><i class="fas fa-user-graduate"></i> Prestasi</a>
             </li>
-            <a class="hvr-bob" href=""><img src="assets\Pribadi\icon\learning\png\050-campus.png" alt=""></a>
+            <a class="hvr-bob" href=""><img src="assets\Pribadi\icon\learning\png\050-campus.png"
+                    alt="Logo Sekolah"></a>
             <li>
                 <a class="hvr-pulse-grow btn text-white" href="#"><i class="fas fa-calendar-check"></i> Agenda</a>
             </li>
@@ -41,47 +45,51 @@
     <!--End Navbar -->
 
     <!-- Hero Image -->
-
-    <!-- <div class="image">
-        <img src="assets/Pribadi/img/school.jpg" alt="">
-    </div> -->
     <div class="container-fluid hero">
-        <img src="assets/Pribadi/icon/learning/png/050-campus.png" alt="">
-        <h1>SMA Cakra Buana <br> Jakarta Barat</h1>
+        <div class="hero-text">
+            <img src="assets/Pribadi/icon/learning/png/050-campus.png" alt="Logo Sekolah">
+            <h1>SMA Cakra Buana <br> Jakarta Barat</h1>
+        </div>
     </div>
-    <div class="container">
-        <div class="row text-center py-1">
-            <div class="col">
+    <!-- End Hero -->
 
+    <!-- Data Sekolah Jumlah Siswa , kelas & Guru-->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center py-3 justify-content-center">
+            <div class="col mt-3">
                 <div class="Pelajar card shadow-sm">
-                    <img class=" m-auto mt-2" src="assets/Pribadi/icon/learning/png/034-read.png" alt="" height="50px" width="50px">
+                    <img class=" m-auto mt-2" src="assets/Pribadi/icon/learning/png/034-read.png" alt="pelajar"
+                        height="50px" width="50px">
                     <p>345</p>
                     <p>Jumlah Pelajar</p>
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col mt-3">
                 <div class="Kelas card">
-
-                    <img class=" m-auto mt-2" src="assets/Pribadi/icon/learning/png/037-homeschooling.png" alt="" height="50px" width="50px">
+                    <img class=" m-auto mt-2" src="assets/Pribadi/icon/learning/png/037-homeschooling.png" alt="kelas"
+                        height="50px" width="50px">
                     <p>10</p>
                     <p>Jumlah Kelas</p>
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col mt-3">
                 <div class="Guru card">
-                    <img class=" m-auto mt-2" src="assets/Pribadi/icon/learning/png/035-teach.png" alt="" height="50px" width="50px">
+                    <img class="m-auto mt-2" src="assets/Pribadi/icon/learning/png/035-teach.png" alt="guru"
+                        height="50px" width="50px">
                     <p>30</p>
                     <p>Jumlah Guru</p>
                 </div>
             </div>
         </div>
+        <!-- End Data Sekolah -->
+
         <!-- Profile sekolah -->
         <div class="row Profile">
             <div class="col">
                 <div class="profil card card-profil shadow-sm">
-                    <h5><i class="fas fa-school"></i> Profile Sekolah</h5>
+                    <h5><i class="fas fa-school mt-3"></i> Profile Sekolah</h5>
                 </div>
             </div>
         </div>
