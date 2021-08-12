@@ -1,0 +1,18 @@
+@font-face {
+    font-family: SourceSerifPro;
+    src: url(../font/SourceSerifPro/SourceSerifPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: SonsieOne;
+    src: url(../font/SonsieOne/SonsieOne-Regular.ttf);
+}
+
+body {
+    background-color: rgba(white, white, rgb(168, 168, 226), alpha);
+}
+
+
+@media (min-width: 576px) {
+    /* CSS Masukin Di dalam sini */
+}
