@@ -12,37 +12,43 @@
     <link rel="stylesheet" href="assets/Pribadi/css/dekstop-app.css">
     <link rel="stylesheet" href="assets/Pribadi/css/tablet-app.css">
     <link rel="stylesheet" href="assets/Pribadi/css/mobile-app.css">
-    <title>Home Page</title>
+    <title>Home Page School</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="text-center navBar1 shadow-sm">
-        <ul>
+    <nav class="text-center navBar1 shadow-lg">
+        <!-- ToggleTablet&NameBrand -->
+        <div class="NameBrands">
+            <h4>SMA CB JAKARTA</h4>
+            <a href="javascript:void(0);" class="navToggleIcon" onclick="myFunction()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <ul id="myLinks">
             <li>
-                <a class="hvr-pulse-grow btn text-white" href="#"><i class="fas fa-home"></i> Home</a>
+                <a class="hvr-grow btn text-white" href="#"><i class="fas fa-home"></i> Home</a>
             </li>
             <li>
-                <a class="hvr-pulse-grow btn text-white" href="#"><i class="fas fa-info"></i> Informasi</a>
+                <a class="hvr-grow btn text-white" href="#"><i class="fas fa-info"></i> Informasi</a>
             </li>
             <li>
-                <a class="hvr-pulse-grow btn text-white" href="#"><i class="fas fa-user-graduate"></i> Prestasi</a>
+                <a class="hvr-grow btn text-white" href="#"><i class="fas fa-user-graduate"></i> Prestasi</a>
             </li>
-            <a href=""><img src="assets\Pribadi\icon\learning\png\050-campus.png" alt="Logo Sekolah"></a>
+            <a class="icon-sekolah" href="#"><img src="assets\Pribadi\icon\learning\png\050-campus.png" alt="Logo Sekolah"></a>
             <li>
-                <a class="hvr-pulse-grow btn text-white" href="#"><i class="fas fa-calendar-check"></i> Agenda</a>
-            </li>
-            <li>
-                <a class="hvr-pulse-grow btn text-white" href="#"><i class="fas fa-book-reader"></i> Alumni</a>
+                <a class="hvr-grow btn text-white" href="#"><i class="fas fa-calendar-check"></i> Agenda</a>
             </li>
             <li>
-                <a class="hvr-pulse-grow btn text-white" href="#"><i class="fas fa-user-tie"></i> Pendaftaran</a>
+                <a class="hvr-grow btn text-white" href="#"><i class="fas fa-book-reader"></i> Alumni</a>
+            </li>
+            <li>
+                <a class="hvr-grow btn text-white" href="#"><i class="fas fa-user-tie"></i> Pendaftaran</a>
             </li>
         </ul>
     </nav>
 
     <!--End Navbar -->
-    <!-- Test Git Push -->
 
     <!-- Hero Image -->
     <div class="container-fluid hero">
@@ -54,7 +60,7 @@
     <!-- End Hero -->
 
     <!-- Data Sekolah Jumlah Siswa , kelas & Guru-->
-    <div class="container">
+    <div class="container tablet-content">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center py-3 justify-content-center">
             <div class="col mt-3">
                 <div class="Pelajar card shadow-sm">
@@ -65,7 +71,7 @@
             </div>
 
             <div class="col mt-3">
-                <div class="Kelas card">
+                <div class="Kelas card shadow-sm">
                     <img class=" m-auto mt-2" src="assets/Pribadi/icon/learning/png/037-homeschooling.png" alt="kelas" height="50px" width="50px">
                     <p>10</p>
                     <p>Jumlah Kelas</p>
@@ -73,7 +79,7 @@
             </div>
 
             <div class="col mt-3">
-                <div class="Guru card">
+                <div class="Guru card shadow-sm">
                     <img class="m-auto mt-2" src="assets/Pribadi/icon/learning/png/035-teach.png" alt="guru" height="50px" width="50px">
                     <p>30</p>
                     <p>Jumlah Guru</p>
@@ -83,7 +89,7 @@
         <!-- End Data Sekolah -->
 
         <!-- Profile sekolah -->
-        <div class="row Profile">
+        <div class="row Profile-sekolah">
             <div class="col">
                 <div class="profil card card-profil shadow-sm">
                     <h5><i class="fas fa-school mt-3"></i> Profile Sekolah</h5>
@@ -97,6 +103,17 @@
 
 
     <script src="assets/framework/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <!-- ToggleTabletScript -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById('myLinks');
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            };
+        };
+    </script>
 </body>
 
 </html>

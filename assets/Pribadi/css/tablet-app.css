@@ -12,7 +12,113 @@ body {
     background-color: rgba(white, white, rgb(168, 168, 226), alpha);
 }
 
-
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     /* CSS Masukin Di dalam sini */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /* ToggleMenu */
+    .navBar1 {
+        overflow: hidden;
+        background-color: #219ebc;
+        position: relative;
+    }
+    .NameBrands {
+        display: flex;
+        padding: 1rem;
+        justify-content: space-around;
+    }
+    .NameBrands h4 {
+        padding: 1rem;
+        color: white;
+        letter-spacing: 0.20rem;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .navBar1 #myLinks {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 2rem;
+        margin: 0;
+        transition: 0.5s;
+        background: #3e4444;
+    }
+    #myLinks a:hover {
+        background-color: #219ebc;
+    }
+    #myLinks i {
+        letter-spacing: 1rem;
+        align-items: center;
+    }
+    /* Style navigation menu links */
+    .navBar1 a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: flex;
+        transition: 0.5s;
+    }
+    /* Style the hamburger menu */
+    .navToggleIcon i {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .navBar1 a .navToggleIcon {
+        display: flex;
+        position: absolute;
+        right: auto;
+        top: 0;
+    }
+    /* Add a grey background color on mouse-over */
+    .navBar1 a:hover {
+        color: brown;
+    }
+    /* --------------- */
+    .navBar1 .icon-sekolah {
+        display: none
+    }
+    /* Hero */
+    .hero {
+        position: relative;
+        height: 300px;
+        padding: 1rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/Pribadi/img/school.jpg");
+        background-size: cover;
+    }
+    .hero-text {
+        margin-top: 4rem;
+        font-size: 1rem;
+        color: gold;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    .hero-text img {
+        display: none;
+    }
+    /* Card content */
+    .tablet-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .tablet-content .card {
+        display: flex;
+        justify-content: space-between;
+        background-color: #219ebc;
+        width: 100%;
+        color: white;
+    }
+}
+
+
+/* Profile Sekolah */
+
+.Profile-sekolah {
+    display: flex;
+}
+
+.card-profil {
+    text-align: center;
+    height: 200px;
 }
