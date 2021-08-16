@@ -35,46 +35,58 @@ body {
         color: white;
         letter-spacing: 0.20rem;
     }
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    .navBar1 #myLinks {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        padding: 2rem;
-        margin: 0;
-        transition: 0.5s;
-        background: #3e4444;
-    }
-    #myLinks a:hover {
-        background-color: #219ebc;
-    }
-    #myLinks i {
-        letter-spacing: 1rem;
-        align-items: center;
-    }
-    /* Style navigation menu links */
-    .navBar1 a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        display: flex;
-        transition: 0.5s;
-    }
-    /* Style the hamburger menu */
-    .navToggleIcon i {
-        padding: 1rem;
-        font-size: 2rem;
-    }
-    .navBar1 a .navToggleIcon {
-        display: flex;
-        position: absolute;
-        right: auto;
+    /* SidebarsPanel */
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
         top: 0;
+        left: 0;
+        background-color: #454545;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
     }
-    /* Add a grey background color on mouse-over */
-    .navBar1 a:hover {
-        color: brown;
+    /* The sidebar links */
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        text-align: left;
+        letter-spacing: 0.10rem;
+    }
+    /* When you mouse over the navigation links, change their color */
+    .sidebar a:hover {
+        background: white;
+        color: #219ebc;
+    }
+    /* Position and style the close button (top right corner) */
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        right: 30px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .openbtn {
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        background: transparent;
+        border: none;
+    }
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+    }
+    /* Listmenu */
+    .listmenu-tablet {
+        display: none;
     }
     /* --------------- */
     .navBar1 .icon-sekolah {
@@ -109,16 +121,11 @@ body {
         width: 100%;
         color: white;
     }
-}
-
-
-/* Profile Sekolah */
-
-.Profile-sekolah {
-    display: flex;
-}
-
-.card-profil {
-    text-align: center;
-    height: 200px;
+    .Profile-sekolah {
+        display: flex;
+    }
+    .card-profil {
+        text-align: center;
+        height: 200px;
+    }
 }

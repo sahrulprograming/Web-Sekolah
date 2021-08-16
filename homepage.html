@@ -21,11 +21,22 @@
         <!-- ToggleTablet&NameBrand -->
         <div class="NameBrands">
             <h4>SMA CB JAKARTA</h4>
-            <a href="javascript:void(0);" class="navToggleIcon" onclick="myFunction()">
-                <i class="fas fa-bars"></i>
-            </a>
+            <!-- TestSidePanel -->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">Informasi</a>
+                <a href="#">Prestasi</a>
+                <a href="#">Agenda</a>
+                <a href="#">Alumni</a>
+                <a href="#">Pendaftaran</a>
+            </div>
+            <div id="main">
+                <button class="openbtn fas fa-bars" onclick="openNav()"></button>
+            </div>
+            <!-- EndSidePanel -->
         </div>
-        <ul id="myLinks">
+        <ul class="listmenu-tablet">
             <li>
                 <a class="hvr-grow btn text-white" href="#"><i class="fas fa-home"></i> Home</a>
             </li>
@@ -104,16 +115,17 @@
 
     <!-- Batas JS dll -->
     <script src="assets/framework/bootstrap5/js/bootstrap.bundle.min.js"></script>
-    <!-- ToggleTabletScript -->
     <script>
-        function myFunction() {
-            var x = document.getElementById('myLinks');
-            if (x.style.display === 'block') {
-                x.style.display = 'none';
-            } else {
-                x.style.display = 'block';
-            };
-        };
+        // SidebarKiriScript
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "50%";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
     </script>
 </body>
 
