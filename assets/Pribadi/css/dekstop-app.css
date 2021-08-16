@@ -12,7 +12,6 @@ body {
     background-color: rgba(white, white, rgb(168, 168, 226), alpha);
 }
 
-
 @media (min-width: 992px) {
     nav {
         background-color: #219ebc;
@@ -24,25 +23,27 @@ body {
         bottom: 10px;
         z-index: 9999;
     }
-
     nav a img {
         width: 40px;
         height: 40px;
         margin-top: 5px;
     }
-
     nav ul li {
         list-style: none;
         display: inline-block;
         margin-inline: 2rem;
     }
-
     nav ul li a {
         text-decoration: none;
         font-size: 16px;
         font-family: SourceSerifPro;
     }
-
+    .navToggleIcon {
+        display: none;
+    }
+    .NameBrands {
+        display: none;
+    }
     .hero {
         width: 100%;
         height: 70vh;
@@ -54,19 +55,16 @@ body {
         background-position: center center;
         /* background-attachment: fixed; */
     }
-
     .hero-text {
         line-height: 70vh;
         text-align: center;
     }
-
     .hero-text img {
         height: 90px;
         width: 90px;
         margin-bottom: 60px;
         margin-right: 15px;
     }
-
     .hero-text h1 {
         display: inline-block;
         font-family: SonsieOne;
@@ -74,14 +72,12 @@ body {
         font-size: 37px;
         text-shadow: 2px 2px 4px #000000;
     }
-
     .container {
         background: white;
         border-radius: 40px 40px 0 0;
         box-sizing: border-box;
         margin-top: -3rem
     }
-
     .Pelajar,
     .Kelas,
     .Guru {
@@ -89,14 +85,12 @@ body {
         border-radius: 20px 20px 20px 20px;
         filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.25));
     }
-
     .card p {
         font-family: SourceSerifPro;
         margin: 0px;
         font-size: 2rem;
         color: white;
     }
-
     .card-profil {
         height: 2000px;
         color: black;
@@ -108,5 +102,4 @@ body {
         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.50);
         border-radius: 40px 40px 0px 0px;
     }
-
 }
