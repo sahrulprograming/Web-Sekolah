@@ -17,11 +17,11 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="text-center navBar1 shadow-lg">
+    <nav class="text-center navBar1 shadow-sm">
         <!-- ToggleTablet&NameBrand -->
         <div class="NameBrands">
             <h4>SMA CB JAKARTA</h4>
-            <!-- TestSidePanel -->
+            <!-- Menu SidePanel untuk tablet -->
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">Home</a>
@@ -30,12 +30,19 @@
                 <a href="#">Agenda</a>
                 <a href="#">Alumni</a>
                 <a href="#">Pendaftaran</a>
+                <hr class="text-white">
+                <!-- Light/Dark Mode -->
+                <div class="light-darkMode">
+                    <button class="darkModes btn" onclick="darkFunction()"><i class="fas fa-toggle-on"></i> Dark Mode</button>
+                </div>
+
             </div>
             <div id="main">
                 <button class="openbtn fas fa-bars" onclick="openNav()"></button>
             </div>
             <!-- EndSidePanel -->
         </div>
+        <!-- Menu desktop -->
         <ul class="listmenu-tablet">
             <li>
                 <a class="hvr-grow btn text-white" href="#"><i class="fas fa-home"></i> Home</a>
@@ -66,6 +73,13 @@
         <div class="hero-text">
             <img src="assets/Pribadi/icon/learning/png/050-campus.png" alt="Logo Sekolah">
             <h1>SMA Cakra Buana <br> Jakarta Barat</h1>
+            <!-- TeksTablet -->
+            <h5 class="teksQuotes">Bersama Membangun Negeri Dengan Insan Berprestasi</h5>
+            <!-- teks snackbars untuk notif -->
+            <div>
+                <button class="tombolDaftar" onclick="snackFunction()">Daftar</button>
+                <div id="snackbar">Halo, Kamu bisa daftar dimenu pendaftaran ya !</div>
+            </div>
         </div>
     </div>
     <!-- End Hero -->
@@ -118,13 +132,37 @@
     <script>
         // SidebarKiriScript
         function openNav() {
-            document.getElementById("mySidebar").style.width = "50%";
+            document.getElementById("mySidebar").style.width = "60%";
         }
-
-        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        // DarkMode/Light Mode Script
+        function darkFunction() {
+            var elementDark = document.body;
+            elementDark.classList.toggle("dark-mode");
+        }
+        // Sidebar Content
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
+        }
+        // SnackBar menu
+        function snackFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function() {
+                x.className = x.className.replace("show", "");
+            }, 3000);
+        }
+        // Scrol Navbars Fixeds
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementsByClassName("navBar1").style.top = "0";
+            } else {
+                document.getElementsByClassName("navBar1").style.top = "-50px";
+            }
         }
     </script>
 </body>

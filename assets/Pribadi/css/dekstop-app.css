@@ -72,6 +72,15 @@ body {
         font-size: 37px;
         text-shadow: 2px 2px 4px #000000;
     }
+    .teksQuotes {
+        display: none;
+    }
+    .tombolDaftar {
+        display: none;
+    }
+    .light-darkModes {
+        display: none;
+    }
     .container {
         background: white;
         border-radius: 40px 40px 0 0;

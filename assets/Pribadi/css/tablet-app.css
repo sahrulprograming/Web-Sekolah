@@ -23,11 +23,14 @@ body {
     .navBar1 {
         overflow: hidden;
         background-color: #219ebc;
-        position: relative;
+        position: fixed;
+        top: -1px;
+        width: 100%;
+        display: block;
+        transition: top 0.5s;
     }
     .NameBrands {
         display: flex;
-        padding: 1rem;
         justify-content: space-around;
     }
     .NameBrands h4 {
@@ -59,12 +62,10 @@ body {
         text-align: left;
         letter-spacing: 0.10rem;
     }
-    /* When you mouse over the navigation links, change their color */
     .sidebar a:hover {
         background: white;
         color: #219ebc;
     }
-    /* Position and style the close button (top right corner) */
     .sidebar .closebtn {
         position: absolute;
         top: 0;
@@ -80,9 +81,29 @@ body {
         background: transparent;
         border: none;
     }
+    /* DarkOrLight Mode */
+    .light-darkMode {
+        text-align: center;
+        display: flex;
+        width: 50%;
+        margin: 2rem;
+        border: none;
+        border-radius: 5rem;
+        background: white;
+    }
+    .darkModes {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .darkModes i {
+        font-size: 1.5rem;
+    }
+    .dark-mode {
+        background-color: #333;
+    }
     #main {
         transition: margin-left .5s;
-        padding: 20px;
+        padding: 15px;
     }
     /* Listmenu */
     .listmenu-tablet {
@@ -94,18 +115,95 @@ body {
     }
     /* Hero */
     .hero {
-        position: relative;
+        position: static;
+        margin-top: 5rem;
         height: 300px;
         padding: 1rem;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/Pribadi/img/school.jpg");
         background-size: cover;
     }
     .hero-text {
-        margin-top: 4rem;
+        margin: 0;
         font-size: 1rem;
         color: gold;
         text-shadow: 2px 2px 4px #000000;
     }
+    .teksQuotes {
+        margin-top: 4rem;
+        color: white;
+    }
+    /* SnackTeks */
+    .tombolDaftar {
+        padding: 0.50rem;
+        border: none;
+        background: #219ebc;
+        border-radius: 1rem;
+        text-align: center;
+        margin-top: 2rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: white;
+    }
+    #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -160px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 1rem;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 100px;
+        font-size: 14px;
+    }
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+    @-webkit-keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+        to {
+            bottom: 100px;
+            opacity: 1;
+        }
+    }
+    @keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+        to {
+            bottom: 100px;
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes fadeout {
+        from {
+            bottom: 100px;
+            opacity: 1;
+        }
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+    @keyframes fadeout {
+        from {
+            bottom: 100px;
+            opacity: 1;
+        }
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+    /* End Snackteks */
     .hero-text img {
         display: none;
     }
@@ -115,6 +213,7 @@ body {
         flex-direction: column;
     }
     .tablet-content .card {
+        position: static;
         display: flex;
         justify-content: space-between;
         background-color: #219ebc;
